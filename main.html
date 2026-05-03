@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Information</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+        }
+        nav {
+            background-color: #ffcccb;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1600x400/ffcccb/ffffff?text=Health+is+Wealth') no-repeat center center;
+            background-size: cover;
+            color: #333;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+        }
+        .hero p {
+            font-size: 1.25rem;
+        }
+        .card {
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #ffcccb;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Disease Info</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="main.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-danger text-white" href="booking.html">Book an Appointment</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Learn About Diseases</h1>
+            <p class="lead">Your comprehensive guide to understanding various diseases.</p>
+            <a href="#diseases" class="btn btn-light btn-lg">Explore Now</a>
+            <a href="booking.html" class="btn btn-danger btn-lg">Book an Appointment</a>
+        </div>
+    </header>
+
+    <main class="container my-5" id="diseases">
+        <h2 class="text-center mb-4">Disease Categories</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/2.jpg" class="card-img-top" alt="Sickle Cell Anemia">
+                    <div class="card-body">
+                        <h5 class="card-title">Sickle Cell Anemia</h5>
+                        <p class="card-text">A genetic blood disorder leading to pain episodes and complications.</p>
+                        <a href="sicklecell.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/3.jpg" class="card-img-top" alt="Hypertension">
+                    <div class="card-body">
+                        <h5 class="card-title">Hypertension</h5>
+                        <p class="card-text">A long-term condition with elevated blood pressure that can lead to serious health issues.</p>
+                        <a href="hypertension.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/4.webp" class="card-img-top" alt="Asthma">
+                    <div class="card-body">
+                        <h5 class="card-title">Asthma</h5>
+                        <p class="card-text">A condition that narrows airways, making breathing difficult, manageable with the right care.</p>
+                        <a href="asthma.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Disease Info. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

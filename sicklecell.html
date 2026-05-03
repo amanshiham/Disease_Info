@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sickle Cell Anemia - Symptoms and Causes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #a8e0ff, #ffb3ba); /* Softer pastel gradient */
+            color: #333; /* Darker text for better readability */
+            overflow: auto; /* Allow scrolling */
+        }
+        header {
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
+            padding: 2em 0;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            margin: 1em;
+        }
+        nav {
+            background: #ffb3ba; /* Light pink */
+            color: #333;
+            padding: 1em 0;
+            text-align: center;
+            border-radius: 15px;
+            margin: 1em;
+        }
+        nav a {
+            color: #333;
+            padding: 1em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff7e5f; /* Darker pink on hover */
+            transform: scale(1.1);
+        }
+        section {
+            padding: 2em;
+            margin: 1em;
+            background: rgba(255, 255, 255, 0.9); /* Slightly opaque white */
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        section:hover {
+            transform: scale(1.02);
+        }
+        h1, h2 {
+            color: #ff7e5f; /* Soft coral color */
+            text-shadow: 1px 1px #ffb3ba; /* Light pink shadow for depth */
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+        .model-container {
+            width: 100%;
+            height: 500px; /* Adjust height as needed */
+            margin : 20px 0;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
+            border-radius: 15px;
+            margin: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<!-- YouTube Video Background -->
+<div class="video-bg">
+    <iframe src="https://www.youtube.com/embed/iTm7jHIZAic?autoplay=1&mute=1&loop=1&playlist=iTm7jHIZAic" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="overlay"></div>
+
+<header class="animate__animated animate__fadeInDown">
+    <h1>Sickle Cell Anemia</h1>
+    <p>Understanding the Symptoms and Causes</p>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark animate__animated animate__fadeIn">
+    <a class="navbar-brand" href="#">SCA</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link " href="#overview">Overview</a></li>
+            <li class="nav-item"><a class="nav-link" href="#symptoms">Symptoms</a></li>
+            <li class="nav-item"><a class="nav-link" href="#causes">Causes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#treatment">Treatment</a></li>
+            <li class="nav-item"><a class="nav-link" href="#bmi">BMI Calculator</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript:void(0);" onclick="open3DModel()">3D Model</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="overview" class="container animate__animated animate__fadeInUp">
+    <h2>Overview</h2>
+    <p>Sickle cell anemia is a genetic disorder that causes red blood cells to become misshapen and break down. This can lead to various health issues, including severe pain and organ damage.</p>
+    <p> It is a chronic condition that requires ongoing medical care to manage symptoms and prevent complications. With proper treatment, many people with sickle cell anemia can lead active and fulfilling lives.</p>
+</section>
+
+<section id="symptoms" class="container animate__animated animate__fadeInUp">
+    <h2>Symptoms</h2>
+    <ul>
+        <li>Severe pain in the chest, abdomen, or joints</li>
+        <li>Fatigue</li>
+        <li>Shortness of breath</li>
+        <li>Jaundice (yellowing of the skin and eyes)</li>
+        <li>Frequent infections</li>
+        <li>Delayed growth and development</li>
+    </ul>
+</section>
+
+<section id="causes" class="container animate__animated animate__fadeInUp">
+    <h2>Causes</h2>
+    <p>Sickle cell anemia is caused by a mutation in the HBB gene that codes for hemoglobin. This mutation leads to the production of abnormal hemoglobin, which causes red blood cells to become misshapen and break down.</p>
+    <p>The condition is inherited in an autosomal recessive pattern, meaning that a person must inherit two copies of the mutated gene (one from each parent) to develop the condition.</p>
+</section>
+
+<section id="treatment" class="container animate__animated animate__fadeInUp">
+    <h2>Treatment</h2>
+    <p>Treatment for sickle cell anemia typically involves managing symptoms and preventing complications. This may include:</p>
+    <ul>
+        <li>Pain management with medication</li>
+        <li>Antibiotics to prevent infections</li>
+        <li>Hydroxyurea to increase fetal hemoglobin production</li>
+        <li>Blood transfusions to increase red blood cell count</li>
+        <li>Stem cell transplantation to replace abnormal stem cells</li>
+    </ul>
+</section>
+
+<section id="bmi" class="container animate__animated animate__fadeInUp">
+    <h2>BMI Calculator </h2>
+    <p>Calculate your BMI:</p>
+    <form>
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" name="weight"><br><br>
+        <label for=" height">Height (m):</label>
+        <input type="number" id="height" name="height"><br><br>
+        <input type="submit" value="Calculate BMI">
+    </form>
+    <p id="bmi-result"></p>
+</section>
+
+<footer>
+    <p>&copy; 2023 Sickle Cell Anemia</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script>
+    // BMI calculator script
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const weight = document.querySelector('#weight').value;
+        const height = document.querySelector('#height').value;
+        const bmi = weight / (height ** 2);
+        document.querySelector('#bmi-result').textContent = `Your BMI is ${bmi.toFixed(2)}`;
+
+        // Check if BMI is low
+        if (bmi < 18.5) {
+            const confirmBooking = confirm("Warning: Your BMI is low. Please consult a healthcare professional. Would you like to book an appointment?");
+            if (confirmBooking) {
+                alert("Appointment booking page will open shortly.");
+                // Redirect or open appointment booking
+                window.location.href = "https://www.example.com/appointment-booking"; // Replace with actual booking link
+            }
+        } else if (bmi > 24.9) {
+            alert("Your BMI is high. Please consider a health check-up.");
+        }
+    });
+</script>
+
+</body>
+</html>

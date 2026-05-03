@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Disease Information</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1600x400/ffcccb/ffffff?text=About+Us') no-repeat center center;
+            background-size: cover;
+            color: #333;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 1.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .team-member {
+            transition: transform 0.3s;
+        }
+        .team-member:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #ffcccb;
+            position: relative;
+        }
+        .btn-custom {
+            background-color: #ff6347; /* Tomato color */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Disease Info</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="main.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-danger text-white" href="booking.html">Book an Appointment</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1 class="display-4">About Us</h1>
+        <p class="lead">Dedicated to providing reliable information on various diseases.</p>
+        <a href="#mission" class="btn btn-custom btn-lg">Our Mission</a>
+        <a href="#team" class="btn btn-light btn-lg">Meet the Team</a>
+    </header>
+
+    <main class="container my-5">
+        <!-- Mission Section -->
+        <section id="mission" class="text-center mb-5">
+            <h2 class="mb-4">Our Mission</h2>
+            <p>At Disease Info, our aim is to empower users with comprehensive and understandable information about diseases. We believe that knowledge is the first step towards prevention and management.</p>
+            <p>We strive to make health information accessible to everyone, ensuring that our resources are user-friendly and reliable.</p>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team">
+            <h2 class="text-center mb-4">Meet the Team</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card team-member mb-4 shadow-sm">
+                        <img src="images/1.jpg" class="card-img-top" alt="Team Member 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Aman Shiham</h5>
+                            <p class="card-text">Lead Developer & Health Advocate</p>
+                            <a href="#" class="btn btn-primary">Connect</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card team-member mb-4 shadow-sm">
+                        <a href="https://ibb.co/2hKBHnd"><img src="https://i.ibb.co/yPsJ7fq/6.jpg" alt="6" border="0"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Masroor Naujawan</h5>
+                            <p class="card-text">Content Specialist & Researcher</p>
+                            <a href="#" class="btn btn-primary">Connect</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Disease Info. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

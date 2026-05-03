@@ -1,0 +1,17 @@
+body {
+    background-color: #77bbff;
+}
+
+.hero {
+    background-image: url('images/5.webp'); /* Replace with a suitable image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
